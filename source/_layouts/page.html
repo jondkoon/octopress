@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div>
+<article role="article">
+  {% if page.title %}
+    <h2 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
+  {% endif %}
+  {{ content }}
+</article>
+</div>
