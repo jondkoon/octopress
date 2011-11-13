@@ -1,0 +1,104 @@
+$noise-bg: image-url('noise.png') top left;
+$img-border: inline-image('dotted-border.png');
+
+// Main Link Colors
+$link-color: lighten(#165b94, 3) !default;
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
+$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+
+// Main Section Colors
+$title-color: #f2f2f2 !default;
+$subtitle-color: #aaa !default;
+
+$text-color: #222 !default;
+$text-color-light: #aaa !default;
+
+/* Core theme application */
+$text-color: #222 !default;
+$text-color-light: #aaa !default;
+$type-border: #ddd !default;
+
+a {
+  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+}
+a {
+  @include transition(color .3s);
+}
+
+body 
+{
+    background-image: url("../images/robot.png");
+    background-repeat: no-repeat;
+    padding-left: 160px;
+    background-position: -6px -10px;
+    background-size: 31% auto;
+}
+
+#title
+{
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#title a:hover #subtitle{
+    text-decoration: none;
+    color: #000;
+}
+#title a:hover {
+    text-decoration: none;
+}
+
+#subtitle
+{
+    color: #999;
+}
+
+a, a:visited, a:link, a:active 
+{
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+}
+
+.primary-nav 
+{
+    height: 30px;
+    font-size: 13px;
+}
+
+.primary-nav ul
+{
+    margin-left: 0;
+}
+
+.primary-nav li
+{
+    display: inline;
+}
+
+.primary-nav li a
+{
+    background-color: #EEEEEE;
+    padding: 7px 10px;
+}
+
+.primary-nav li a:hover 
+{
+    background-color: rgba(255,204,0,.5);
+    text-decoration: none;
+}
+
+#main {
+    width: 780px;
+    padding: 10px;
+    padding-left: 0;
+    background-color: rgba(250,250,250,.8);
+}
