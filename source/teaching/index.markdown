@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "teaching"
+title: "Teaching"
 date: 2011-11-13 03:14
 comments: false
 sharing: false
