@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://jondkoon.com
-title: Jon D Koon | Software Developer
-subtitle: 
+title: Jon D Koon
+subtitle: Software Developer 
 author: Jon D Koon
 simple_search: http://google.com/search
 
@@ -19,6 +19,22 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: jondkoon@gmail.com
+
+navigation:
+ - text: About
+   url: /
+ - text: Portfolio
+   url: /portfolio/
+ - text: Open Source
+   url: /open-source/
+ - text: Experiments
+   url: /experiments/
+ - text: Teaching
+   url: /teaching/
+ - text: Resume
+   url: /resume/
+ - text: Contact
+   url: /contact/
 
 # ----------------------- #
 #    Jekyll & Plugins     #

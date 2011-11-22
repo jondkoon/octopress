@@ -72,28 +72,28 @@ a:hover
 {
     height: 30px;
     font-size: 13px;
-}
 
-.primary-nav ul
-{
-    margin-left: 0;
-}
+    ul
+    {
+        margin-left: 0;
+    }
 
-.primary-nav li
-{
-    display: inline;
-}
+    li
+    {
+        display: inline;
+    }
 
-.primary-nav li a
-{
-    background-color: #EEEEEE;
-    padding: 7px 10px;
-}
+    li a
+    {
+        background-color: #EEEEEE;
+        padding: 7px 10px;
+    }
 
-.primary-nav li a:hover 
-{
-    background-color: rgba(255,204,0,.5);
-    text-decoration: none;
+    li a:hover, li.current a
+    {
+        background-color: rgba(255,204,0,.5);
+        text-decoration: none;
+    }
 }
 
 #main {

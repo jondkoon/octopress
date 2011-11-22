@@ -1,9 +1,13 @@
-<ul class="main-navigation">
-  <li><a href="{{ root_url }}/">About</a></li>
-  <li><a href="{{ root_url }}/portfolio">Portfolio</a></li>
-  <li><a href="{{ root_url }}/open-source">Open Source</a></li>
-  <li><a href="{{ root_url }}/experiments">Experiments</a></li>
-  <li><a href="{{ root_url }}/teaching">Experiments</a></li>
-  <li><a href="{{ root_url }}/resume">Experiments</a></li>
-  <li><a href="{{ root_url }}/contact">Contact</a></li>
+<ul class="navigation">
+    {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% capture page_url %}{{ page.url | replace:'/index.html','/'}}{% endcapture %}
+        {% if page_url == link.url or page.layout == link.layout %}
+            {% assign current = 'current' %}
+        {% endif %}
+        <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+    {% endfor %}
 </ul>
+
