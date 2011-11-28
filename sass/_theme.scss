@@ -28,11 +28,11 @@ a {
 
 body 
 {
-    background-image: url("../images/robot.png");
+    background-image: url("../images/robot-flipped.png");
     background-repeat: no-repeat;
     padding-left: 160px;
-    background-position: -6px -10px;
-    background-size: 31% auto;
+    background-position: -30px 7px;
+    background-size: 14% auto;
 }
 
 #title
@@ -101,4 +101,19 @@ a:hover
     padding: 10px;
     padding-left: 0;
     background-color: rgba(250,250,250,.8);
+}
+
+#content {
+    font-size: 16px;
+}
+
+footer {
+    font-size: 12px;
+    width: 780px;
+}
+
+footer p {
+    border-top: 1px solid #999;
+    text-align: center;
+    color: #777;
 }
