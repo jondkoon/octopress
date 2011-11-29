@@ -16,20 +16,41 @@ Georgia Institute of Technology, Atlanta, GA
 ## Experience
 ### The Proven Method, Atlanta, GA
 #### Software Developer, March 2009 - Present
-- Provided consulting and backend development for the redesign of whiteoakpastures.com in partnership with Green Olive Media.
-- Migrated company from Visual Source Safe to self hosted SVN, and eventually to cloud hosted Mercurial over the course of two years
-- Prototyped web based means to interoperate with a users local hardware using Java Applets and NodeJS
+**Projects**  
+
 - Worked with a distributed team to develop and deploy a web based management performance dashboard for Aaron Rents. Role involved creation of two custom jquery plugins and oversight of frontend architecture.
-- Presented technical talks to non-technical recruiters on topics such as: HTML5, Version Control, Web application architecture, and How to read a technical resume
+- Provided consulting and e-commerce backend development for the redesign of whiteoakpastures.com in partnership with Green Olive Media.
+- Prototyped web based means to interoperate with a users local hardware using Java Applets and NodeJS
 - Architected and developed a web based, real time, distributed, business intelligence platform for Aaron Rents utilizing ASP.Net MVC 3, C#, SQL Server, jQuery, and KnocoutJS
 - Championed and developed custom tachometer widget for use with Aarons Management Performance Dashboard using Canvas and Explorer Canvas for IE compatability.
 - Developed custom cascading list jquery widget modelled after OSX finder for Aaron Rents.
-- Mentored summer intern and helped him successfully release two web projects with minimal prior web experience.
-- Crafted proposal for replacing lab management system for the Georgia Tech Physics Department
-- Lead frontend engineering for a web based store diagramming, data gathering, and reprting tool for The Home Depot. Rewrote backend using Django and refactored front end to utilize backbone.js
-- Orchestrated and performed migration of 30+ company email accounts from Microsoft Exchange to Google Apps while keeping business running through the process.
+- Crafted proposal for replacing undergraduate lab management system for the Georgia Tech Department of Physics.
+- Lead frontend engineering and backend rewrite for a web based store diagramming, data gathering, and reprting tool for The Home Depot using Django, jQuery UI, and Backbone.js 
 - Designed, built, and documented 4 web services for the Administrative Office of the Courts to securely transmit traffic citation data from Georgia's law enforcement agencies, to county courts, and eventually to the state citation data warehouse.
-- Contributed programming, design, and problem solving skills to deploy a Struts based Probate Court Information System for the Administrative Office of the Courts. 
+- Contributed programming, design, and problem solving skills to deploy a web based probate court information system capable of managing information, generating forms, reports, and receipts for marriage licenses, firearms licenses, probate cases, birth certificates, death certificates, and wills.
+
+**Improvement**  
+
+- Mentored summer intern and helped him successfully release two billable web projects with minimal prior web experience.
+- Orchestrated and performed migration of 30+ company email accounts from Microsoft Exchange to Google Apps while keeping business running through the process.
+- Presented technical talks to non-technical recruiters on topics such as: HTML5, Version Control, Web application architecture, and How to read a technical resume
+- Migrated company from Visual Source Safe to self hosted SVN, and eventually to cloud hosted Mercurial over the course of two years
+- Integrated existing static company website into the Drupal content mangement system. 
+- Designed company blog and assisted in-house social media expert with website maintenance.
+- Wrote blog posts on hyrbid mobile applications and the current browser wars.
+
+### The Creative Circus, Atlanta, GA
+#### Interactive Development Instructor, July 2011 - Present
+
+- Taught Intro to programming encompassing variables, logic, control flow, iteration, functions, and object oriented programming using JavaScript
+- Designed curriculum from the ground up including lesson plans, projects, interactive lecture notes, reading assignments, class website, and tests
+- Customized Python based html5 slide generation software to create interactive JavaScript lecture notes.
+
+### Jon D Koon Development & Design, Atlanta, GA
+#### Freelancer, Decemeber 2008 - Present
+
+- Implemented and Designed thegreenflue.com a Drupal based E-Commerce web site on self managed Linux VPS 
+- Launched redesign of ProcessLogic.net, an IT services company
 
 ## Skills
 **Programming**  
@@ -44,15 +65,13 @@ Django, ASP.Net MVC3, Spring MVC, Drupal
 
 **Server**  
 Linux, Windows 2003  
-Apache, Nginx, IIS  
+Nginx, Apache, IIS  
 MySQL, Postgres, SQL Server, Oracle  
 Amazon EC2, Amazon S3, Rackspace Cloud, Google App Engine  
 
 **Tools**  
-Mercurial, Git, SVN, CVS  
 Vim, Visual Studio, Eclipse  
-Maven, Ant  
-Pivotal Tracker, Fogbugz, Lighthouseapp, JIRA  
+Mercurial, Git, SVN, CVS  
 Virtual Box, Vagrant  
-
-
+Pivotal Tracker, Fogbugz, Lighthouseapp, JIRA  
+Maven, Ant  
