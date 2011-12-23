@@ -63,9 +63,17 @@ a, a:visited, a:link, a:active
     text-decoration: none;
 }
 
-a:hover 
+a:hover
 {
     text-decoration: underline;
+}
+
+#content a {
+    text-decoration: underline;
+}
+
+#content a:hover {
+    text-decoration: none;
 }
 
 .primary-nav 
@@ -100,11 +108,11 @@ a:hover
     width: 780px;
     padding: 10px;
     padding-left: 0;
-    background-color: rgba(250,250,250,.8);
 }
 
 #content {
     font-size: 16px;
+    min-height: 265px;
 }
 
 footer {

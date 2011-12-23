@@ -7,10 +7,10 @@ sharing: false
 footer: false
 sidebar: false
 ---
-I'm Jon Koon, an Atlanta based software developer. A full stack web developer specifically. In my career I have worked with just about every web framework, language, database, and operating system in common use. I'm a jack of all backends, so for the last several years I have been attempting to master the front end. 
+I'm Jon Koon, an Atlanta based software developer with a focus in web development. I enjoy creating highly responsive, usable, beautiful, well architected, and maintainable applications that solve real problems.
 
-I love building highly responsive applications that are fun to use and do what you expect. I believe in Restful web services, client side templates, front end MVC architecture, PubSub, JavaScript, jQuery, and all things HTML5.
+I have worked with major web frameworks in Python, C#.NET, Java, and PHP. The common thread is HTTP, HTML, CSS, and JavaScript. With an affinity for UI development and responsive applications I have been drawn to the study of JavaScript and front end architecture. I love working with jQuery and have developed a few plugins.
 
-I'm foremost a follower of Christ, a husband, and father.  
-I'm a part time teacher and a lifelong student.  
-My main gig is doing Software Development with The Proven Method's professional services team.
+I'm foremost a follower of Christ, a Husband, and Father.  
+I'm a part-time [Teacher](/teaching) and a lifelong Student.  
+My main gig is doing Software Development with [The Proven Method's](http://provenmethod.com/professional-services) professional services team.
