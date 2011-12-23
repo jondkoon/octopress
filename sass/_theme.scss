@@ -19,6 +19,10 @@ $text-color: #222 !default;
 $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 
+.group:before, .group:after { content: ""; display: table; }
+.group:after { clear: both; }
+.group { *zoom: 1; }
+
 a {
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
 }
@@ -33,6 +37,13 @@ body
     padding-left: 160px;
     background-position: -30px 7px;
     background-size: 14% auto;
+}
+
+dt 
+{
+    float:left;
+    font-weight: bold;
+    margin-right: 8px;
 }
 
 #title
@@ -124,4 +135,9 @@ footer p {
     border-top: 1px solid #999;
     text-align: center;
     color: #777;
+}
+
+.portfolio-image {
+    width: 150px;
+    float: left;
 }
