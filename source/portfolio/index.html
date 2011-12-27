@@ -16,41 +16,46 @@ portfolio:
         - drawingtool2.png
         - drawingtool3.png
         - drawingtool4.png
+
  -  name: Aaron’s Management Performance Dashboard (AMP)
     description: Created to allow eligible employees to track their impact on the company’s performance and opt into a stock grant program
     role: "Oversaw front end development. Created two custom widgets: a tachometer and cascading list"
     technology: HTML, CSS, JavaScript, Jquery, Jquery UI, Canvas, ASP.Net MVC 3, C#, Razor
+    images:
+        - amp1.png
+        - amp2.png
+
  -  name: Aaron’s Multi Unit Manager (MUM)
     description: Created to allow managers who oversee multiple stores the ability to view and interact with its stores in real time. It is a distributed system that uses a peer to peer architecture to achieve real time data access. It is also a one page application that makes heavy use of ajax to provide an ideal user experience.
     role: Lead Developer. Planned backend and front end architecture.
     technology: ASP.Net MVC3, C#, Razor, SQL Server, HTML, CSS, JavaScript, Jquery, Jquery UI, Underscore.js, KnockoutJS
+    
  -  name: Whiteoak Pastures
     description: Worked with Green Olive Media to integrate their redesign of whiteoakpastures.com with the existing E-Commerce Solution.
     role: Sole developer. Wrote e-commerce theme from design. Performed server move.
     technology: PHP, MySQL, Zen Cart, HTML, CSS, JavaScript
+    images:
+        - whiteoak.png
+        - whiteoak2.png
+
  -  name: Probate Court Information System (PCIS)
     description: Created to replace a legacy Microsoft Access application that was becoming impossible to maintain. It is used by probate court clerks to manage information, generate forms, reports, and receipts for marriage licenses, firearms licenses, probate cases, birth certificates, death certificates, and wills.
     role: Came in late to the project and did both backend and front end development to finish the project and delivery it to the client.
     technology: Java, Struts, iText, Oracle 10g, Tomcat, jQuery, jQuery UI, JSP, HTML, and CSS.
+
  -  name: AOC Citation Data Web Services
     description: Developed to allow the transfer of traffic citation information from police departments, to courts and finally to a citation data warehouse. Project included a web application that managed web service consumer credentials and access.
     role: Co-Developed Court-to-State web service, Web application, and automated web service testing system. Solely developed
     technology: Java, Tomcat, Oracle 10g, Apache CXF, WSDL, XML, SOAP, jQuery, HTML, CSS, Maven, Spring, Spring MVC, Hibernate, Python, JaxB
+    images:
+        - aoc-webservices.png
+
 ---
+
 {% for piece in page.portfolio %}
-<h3>{{ piece.name }}</h3>
-<dl>
-    <dt>description:</dt>
-    <dd>{{ piece.description }}</dd>
-    <dt>role:</dt>
-    <dd>{{ piece.role }}</dd>
-    <dt>technology:</dt>
-    <dd>{{ piece.technology }}</dd>
-</dl>
-<p class="group">
-{% for image in piece.images %}
-    <img class="portfolio-image" src="/images/portfolio/{{ image }}" />
-{% endfor %}
-</p>
-<br />
+    {% for image in piece.images %}
+    <p class="image-crop">
+        <img class="portfolio-image" src="/images/portfolio/{{ image }}" />
+    </p>
+    {% endfor %}
 {% endfor %}

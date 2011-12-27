@@ -129,6 +129,7 @@ a:hover
 footer {
     font-size: 12px;
     width: 780px;
+    clear: both;
 }
 
 footer p {
@@ -137,7 +138,24 @@ footer p {
     color: #777;
 }
 
-.portfolio-image {
-    width: 150px;
+$image-size: 200px;
+
+.image-crop {
+    overflow: hidden;
+    width: $image-size;
+    height: $image-size;
     float: left;
+    margin-right: 7px;
+    border: 5px solid #EEE;
+}
+
+.image-crop:hover {
+    border-color: #BBB;
+    cursor: pointer;
+}
+
+.portfolio-image {
+    width: 800px;
+    margin-left: -100px;
+    margin-top: -100px;
 }
