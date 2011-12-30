@@ -7,7 +7,7 @@ sharing: false
 footer: false
 sidebar: false
 ---
-You can contact me via email, twitter or facebook. I should get back to you within a few days.
+You can contact me via email, twitter or facebook.
 
 **Email**: [jondkoon@gmail.com](mailto:jondkoon@gmail.com)  
 **Twitter**: [@jondkoon](http://twitter.com/jondkoon)  

@@ -51,11 +51,13 @@ portfolio:
         - aoc-webservices.png
 
 ---
-
+<div class="portfolio-images">
 {% for piece in page.portfolio %}
-    {% for image in piece.images %}
+    {% if piece.images %}
+    {% capture image %}{{ piece.images[0] }}{% endcapture %}
     <p class="image-crop">
         <img class="portfolio-image" src="/images/portfolio/{{ image }}" />
     </p>
-    {% endfor %}
+    {% endif %}
 {% endfor %}
+</div>
