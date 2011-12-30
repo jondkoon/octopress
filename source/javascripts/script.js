@@ -1,6 +1,12 @@
 $(function(){
 
-    useJquery();
+   useJquery();
+   $('.portfolio-image').hover(function(){
+       grayscale.reset(this);
+   }, function(){
+       grayscale(this);
+   });
+   grayscale($('.portfolio-image'));
 
    function useJquery(){
        var images = $('.image-crop');
