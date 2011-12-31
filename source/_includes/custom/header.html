@@ -1,3 +1,10 @@
 <hgroup>
-<h1 id="title"><a href="{{ root_url }}/">{{ site.title }}{% if site.subtitle %} | <span id="subtitle">{{ site.subtitle }}</span>{% endif %}</a></h1>
+<h1 id="title">
+    <a href="{{ root_url }}/">
+        {{ site.title }}
+        {% if site.subtitle %} | 
+        <span id="subtitle">{% if page.title == 'Teaching' %}Instructor{% else %}{{ site.subtitle }}{% endif %}</span>
+        {% endif %}
+    </a>
+</h1>
 </hgroup>

@@ -29,6 +29,12 @@ portfolio:
     description: Created to allow managers who oversee multiple stores the ability to view and interact with its stores in real time. It is a distributed system that uses a peer to peer architecture to achieve real time data access. It is also a one page application that makes heavy use of ajax to provide an ideal user experience.
     role: Lead Developer. Planned backend and front end architecture.
     technology: ASP.Net MVC3, C#, Razor, SQL Server, HTML, CSS, JavaScript, Jquery, Jquery UI, Underscore.js, KnockoutJS
+    images:
+        - mum_1.png
+        - mum_2.png
+        - mum_3.png
+        - mum_4.png
+        - mum_5.png
     
  -  name: Whiteoak Pastures
     description: Worked with Green Olive Media to integrate their redesign of whiteoakpastures.com with the existing E-Commerce Solution.
@@ -42,22 +48,67 @@ portfolio:
     description: Created to replace a legacy Microsoft Access application that was becoming impossible to maintain. It is used by probate court clerks to manage information, generate forms, reports, and receipts for marriage licenses, firearms licenses, probate cases, birth certificates, death certificates, and wills.
     role: Came in late to the project and did both backend and front end development to finish the project and delivery it to the client.
     technology: Java, Struts, iText, Oracle 10g, Tomcat, jQuery, jQuery UI, JSP, HTML, and CSS.
+    images:
+        - aoc_logo.png
 
  -  name: AOC Citation Data Web Services
     description: Developed to allow the transfer of traffic citation information from police departments, to courts and finally to a citation data warehouse. Project included a web application that managed web service consumer credentials and access.
-    role: Co-Developed Court-to-State web service, Web application, and automated web service testing system. Solely developed
+    role: Co-Developed Court-to-State web service, Web application, and automated web service testing system. Solely developed reporting and citation code list web service.
     technology: Java, Tomcat, Oracle 10g, Apache CXF, WSDL, XML, SOAP, jQuery, HTML, CSS, Maven, Spring, Spring MVC, Hibernate, Python, JaxB
     images:
         - aoc-webservices.png
-
+ -  name: GT Theta Xi Fraterntiy Intranet & Website
+    description: In addition to running the fraternities public facing internet presence this drupal website acts as an intranet that provides brother and associate profiles, rush management, associate education tracking, and various member reporting using role based permissions
+    role: Development and Design
+    technology: Drupal, PHP, MySQL, jQuery, HTML, CSS, JavaScript
+    images:
+        - gttx1.png
+        - gttx2.png
+ -  name: My Wedding Website
+    description: 
+    role: Development and Design
+    technology: tech
+    images:
+        - jonjulie1.png
+        - jonjulie2.png
+        - jonjulie3.png
+        - jonjulie4.png
+        - jonjulie5.png
+ -  name: Process Logic Inc.
+    description: Process Logic
+    role: Development and Design
+    technology: tech
+    images:
+        - processlogic1.png
+        - processlogic2.png
+        - processlogic3.png
+ -  name: The Green Flue
+    description: The Green Flue
+    role: Development and Design
+    technology: tech
+    images:
+        - thegreenflue1.png
+        - thegreenflue2.png
+        - thegreenflue3.png
+        - thegreenflue4.png
 ---
-<div class="portfolio-images">
+<div class="portfolio-pieces">
+{% for piece in page.portfolio %}
+    <div class="piece-info">
+        <h3>{{ piece.name }}</h3>
+        <p class="description">{{ piece.description }}</p>
+        <h4>Role</h4>
+        <p class="role">{{ piece.role }}</p>
+        <h4>Technology</h4>
+        <p class="technology">{{ piece.technology }}</p>
+    </div>
+{% endfor %}
 {% for piece in page.portfolio %}
     {% if piece.images %}
-    {% capture image %}{{ piece.images[0] }}{% endcapture %}
-    <p class="image-crop">
-        <img class="portfolio-image" src="/images/portfolio/{{ image }}" />
-    </p>
+        {% capture image %}{{ piece.images[0] }}{% endcapture %}
+        <p class="image-crop">
+            <img class="portfolio-image" src="/images/portfolio/{{ image }}" />
+        </p>
     {% endif %}
 {% endfor %}
 </div>
