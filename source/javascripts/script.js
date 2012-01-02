@@ -13,6 +13,9 @@ $(function(){
        var $this = $(this);
        var pieceInfo = pieceInfos.eq(index);
        var img = $this.find("img");
+       var closeLink = $this.find(".close-link");
+       var nextImg = $this.find(".next-image");
+       var prevImg = $this.find(".prev-image");
        var imageCSS = {
            'margin-left': img.css('margin-left'),
            'margin-top': img.css('margin-top')
@@ -28,7 +31,17 @@ $(function(){
        //set position explicitly so animation works properly
        $this.css(originalCSS);
 
-       $this.click(function(){
+       nextImg.click(function(){
+           var curImg = img.filter(":visible");
+           var nextImg = curImg.next("img");
+           if(nextImg.length != 1){
+               nextImg = img.eq(0);
+           }
+           curImg.hide();
+           nextImg.show();
+       });
+
+       img.add(closeLink).click(function(){
            var activeCropCSS = {
                top: 0,
                left: 0,
@@ -59,4 +72,8 @@ $(function(){
    images.css({
        position: 'absolute'
    });
+
+   setTimeout(function(){
+       //images.eq(0).find(".close-link").trigger('click');
+   }, 500);
 });

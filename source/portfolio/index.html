@@ -8,9 +8,9 @@ footer: false
 sidebar: false
 portfolio: 
  -  name: Home Depot Layout Tool
-    description: Designed to allow laymen to diagram the layout of a Home Depot department from a birds eye view and then drill into each product “bay” to add images and other meta information. This information was gathered from 2000+ plus stores across the country and could be interactively viewed by Home Depot Corporate in Atlanta.
+    description: Designed to allow reset team members to diagram the layout of a Home Depot department from a birds eye view and then drill into each product “bay” to add images and other meta information. This information was gathered from 2000+ plus stores across the country and could be interactively viewed by Home Depot Store Support Center in Atlanta.
     role: Lead front end engineer. Wrote custom form framework. Lead the rewrite using Django.
-    technology: HTML, CSS, JavaScript, Jquery, Jquery UI, Backbone.js, Underscore.js, Django, Python
+    technology: Django, Python, JavaScript, jQuery, Jquery UI, Backbone.js, Underscore.js, HTML, CSS, 
     images:
         - drawingtool.png
         - drawingtool2.png
@@ -18,17 +18,17 @@ portfolio:
         - drawingtool4.png
 
  -  name: Aaron’s Management Performance Dashboard (AMP)
-    description: Created to allow eligible employees to track their impact on the company’s performance and opt into a stock grant program
+    description: Created to allow eligible employees to track their impact on the company’s performance and opt into a stock grant program.
     role: "Oversaw front end development. Created two custom widgets: a tachometer and cascading list"
-    technology: HTML, CSS, JavaScript, Jquery, Jquery UI, Canvas, ASP.Net MVC 3, C#, Razor
+    technology: ASP.Net MVC 3, C#, Razor,JavaScript, jQuery, Jquery UI, Canvas, HTML, CSS, 
     images:
         - amp1.png
         - amp2.png
 
  -  name: Aaron’s Multi Unit Manager (MUM)
-    description: Created to allow managers who oversee multiple stores the ability to view and interact with its stores in real time. It is a distributed system that uses a peer to peer architecture to achieve real time data access. It is also a one page application that makes heavy use of ajax to provide an ideal user experience.
+    description: Created to allow managers who oversee multiple stores the ability to view and interact with its stores local data. It is a distributed system that uses a peer to peer architecture to achieve local data access. It is also a one page application that makes heavy use of ajax to provide a fluid user experience.
     role: Lead Developer. Planned backend and front end architecture.
-    technology: ASP.Net MVC3, C#, Razor, SQL Server, HTML, CSS, JavaScript, Jquery, Jquery UI, Underscore.js, KnockoutJS
+    technology: ASP.Net MVC3, C#, Razor, SQL Server, HTML, CSS, JavaScript, jQuery, Jquery UI, Underscore.js, KnockoutJS
     images:
         - mum_1.png
         - mum_2.png
@@ -54,18 +54,18 @@ portfolio:
  -  name: AOC Citation Data Web Services
     description: Developed to allow the transfer of traffic citation information from police departments, to courts and finally to a citation data warehouse. Project included a web application that managed web service consumer credentials and access.
     role: Co-Developed Court-to-State web service, Web application, and automated web service testing system. Solely developed reporting and citation code list web service.
-    technology: Java, Tomcat, Oracle 10g, Apache CXF, WSDL, XML, SOAP, jQuery, HTML, CSS, Maven, Spring, Spring MVC, Hibernate, Python, JaxB
+    technology: Java, Tomcat, Oracle 10g, Apache CXF, Apache Axis2, WSDL, XML, SOAP, jQuery, HTML, CSS, Maven, Spring, Spring MVC, Hibernate, Python, JaxB
     images:
         - aoc-webservices.png
  -  name: GT Theta Xi Fraterntiy Intranet & Website
-    description: In addition to running the fraternities public facing internet presence this drupal website acts as an intranet that provides brother and associate profiles, rush management, associate education tracking, and various member reporting using role based permissions
+    description: In addition to running the fraternities public facing internet presence this drupal website acts as an intranet that provides brother and associate profiles, rush management, associate education tracking, and various member reporting using role based permissions.
     role: Development and Design
     technology: Drupal, PHP, MySQL, jQuery, HTML, CSS, JavaScript
     images:
         - gttx1.png
         - gttx2.png
  -  name: My Wedding Website
-    description: 
+    description:  
     role: Development and Design
     technology: tech
     images:
@@ -105,10 +105,24 @@ portfolio:
 {% endfor %}
 {% for piece in page.portfolio %}
     {% if piece.images %}
-        {% capture image %}{{ piece.images[0] }}{% endcapture %}
-        <p class="image-crop">
-            <img class="portfolio-image" src="/images/portfolio/{{ image }}" />
-        </p>
+        <div class="image-crop">
+            {% for image in piece.images %}
+            {% assign hidden = "" %} 
+            {% if forloop.index0 != 0 %}
+                {% assign hidden = "hidden" %} 
+            {% endif %}
+            <img class="portfolio-image {{hidden}}" src="/images/portfolio/{{ image }}" />
+            {% endfor %}
+            <nav class="image-nav">
+                {% if piece.images.size > 1 %}
+                <span class="arrow prev-image">&larr;</span>
+                <span class="arrow next-image">&rarr;</span>
+                <span class="arrow close-link">X</span>
+                {% else %}
+                <span class="arrow close-link full-length">close</span>
+                {% endif %}
+            </nav>
+        </div>
     {% endif %}
 {% endfor %}
 </div>

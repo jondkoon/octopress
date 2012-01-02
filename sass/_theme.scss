@@ -34,9 +34,13 @@ body
 {
     background-image: url("../images/robot-flipped.png");
     background-repeat: no-repeat;
-    padding-left: 160px;
+    padding-left: 130px;
     background-position: -30px 7px;
     background-size: 14% auto;
+}
+
+.hidden {
+    display: none;
 }
 
 dt 
@@ -163,6 +167,10 @@ $image-size: 300px;
     cursor: pointer;
 }
 
+.active-image:hover {
+    border: 1px solid transparent;
+}
+
 .portfolio-image {
     width: $image-size;
     margin-left: -100px;
@@ -171,7 +179,9 @@ $image-size: 300px;
 
 .active-image {
     z-index: 5 !important;
+    overflow: visible;
 }
+
 
 $shadow: 0 0 5px #DDD;
 
@@ -182,12 +192,53 @@ $shadow: 0 0 5px #DDD;
     background: rgba(255,255,255,.8);
     display: none;
     position: relative;
-    /*
-    -moz-box-shadow: $shadow;
-    -webkit-box-shadow: $shadow;
-    box-shadow: $shadow;
-    */
 }
 .technology b {
     font-weight: bold;
+}
+
+$image-nav-padding: 2px;
+.image-nav {
+    width: $image-size - ($image-nav-padding * 2);
+    padding: 0 $image-nav-padding;
+    margin-top: 2px;
+    border-top: 1px solid #CCC;
+    padding-top: 5px;
+}
+
+$arrow-width: 120px;
+$close-link-width: $image-size - ($arrow-width * 2);
+
+.arrow {
+    color: #999999;
+    cursor: pointer;
+    font-family: "Lucida Grande";
+    font-size: 30px;
+    width: $arrow-width - $image-nav-padding;
+}
+
+.arrow:hover, .active-image img:hover + .image-nav .close-link {
+    color: #000;
+}
+
+.close-link {
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    width: $close-link-width;
+}
+
+.full-length {
+    width: $image-size;
+}
+
+.next-image {
+    float: right;
+    text-align: right;
+}
+
+.prev-image {
+    float: left;
 }
