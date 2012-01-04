@@ -30,11 +30,10 @@ portfolio:
     role: Lead Developer. Planned backend and front end architecture.
     technology: ASP.Net MVC3, C#, Razor, SQL Server, HTML, CSS, JavaScript, jQuery, Jquery UI, Underscore.js, KnockoutJS
     images:
-        - mum_1.png
-        - mum_2.png
-        - mum_3.png
-        - mum_4.png
-        - mum_5.png
+        - mum1.png
+        - mum2.png
+        - mum3.png
+        - mum4.png
     
  -  name: Whiteoak Pastures
     description: Worked with Green Olive Media to integrate their redesign of whiteoakpastures.com with the existing E-Commerce Solution.
@@ -73,7 +72,6 @@ portfolio:
         - jonjulie2.png
         - jonjulie3.png
         - jonjulie4.png
-        - jonjulie5.png
  -  name: Process Logic Inc.
     description: Process Logic
     role: Development and Design
@@ -103,26 +101,28 @@ portfolio:
         <p class="technology">{{ piece.technology }}</p>
     </div>
 {% endfor %}
-{% for piece in page.portfolio %}
-    {% if piece.images %}
-        <div class="image-crop">
-            {% for image in piece.images %}
-            {% assign hidden = "" %} 
-            {% if forloop.index0 != 0 %}
-                {% assign hidden = "hidden" %} 
-            {% endif %}
-            <img class="portfolio-image {{hidden}}" src="/images/portfolio/{{ image }}" />
-            {% endfor %}
-            <nav class="image-nav">
-                {% if piece.images.size > 1 %}
-                <span class="arrow prev-image">&larr;</span>
-                <span class="arrow next-image">&rarr;</span>
-                <span class="arrow close-link">X</span>
-                {% else %}
-                <span class="arrow close-link full-length">close</span>
+    <div class="portfolio-images">
+    {% for piece in page.portfolio %}
+        {% if piece.images %}
+            <div class="image-crop">
+                {% for image in piece.images %}
+                {% assign hidden = "" %} 
+                {% if forloop.index0 != 0 %}
+                    {% assign hidden = "hidden" %} 
                 {% endif %}
-            </nav>
-        </div>
-    {% endif %}
-{% endfor %}
+                <img class="portfolio-image {{hidden}}" src="/images/portfolio/{{ image }}" />
+                {% endfor %}
+                <nav class="image-nav">
+                    {% if piece.images.size > 1 %}
+                    <span class="arrow prev-image">&larr;</span>
+                    <span class="arrow next-image">&rarr;</span>
+                    <span class="arrow close-link">X</span>
+                    {% else %}
+                    <span class="arrow close-link full-length">close</span>
+                    {% endif %}
+                </nav>
+            </div>
+        {% endif %}
+    {% endfor %}
+    </div>
 </div>
