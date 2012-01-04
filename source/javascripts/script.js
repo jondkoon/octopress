@@ -1,5 +1,22 @@
 $(function(){
 
+    //A Linked List Node
+    //Expects a data object that will be stored with the node
+    function LLNode(data) {
+        this.data = data || null;
+        this.next = null;
+        this.prev = null;
+    
+        this.addAfter = function(node){
+            node.next = this.next;
+            if(node.next !== null){
+                this.next.prev = node;
+            }
+            this.next = node;
+            node.prev = this;
+        };
+    };
+
    //$('.portfolio-image').hover(function(){
    //    grayscale.reset(this);
    //}, function(){
@@ -31,12 +48,21 @@ $(function(){
        //set position explicitly so animation works properly
        $this.css(originalCSS);
 
-       nextImg.click(function(){
+       img.each(function(index){
+            var curImage = $(this);
+            var nextImage = img.eq(index+1);
+            if(nextImage.length === 0) nextImage = img.eq(0);
+            var prevImage = img.eq(index-1);
+            if(prevImage.length === 0) prevImage = img.eq(img.length -1);
+            curImage.data('next', nextImage);
+            curImage.data('prev', prevImage);
+       });
+
+       nextImg.add(prevImg).click(function(){
+           var next = "next";
+           if(this === prevImg.get(0)) next = "prev";
            var curImg = img.filter(":visible");
-           var nextImg = curImg.next("img");
-           if(nextImg.length != 1){
-               nextImg = img.eq(0);
-           }
+           var nextImg = curImg.data(next);
            curImg.hide();
            nextImg.show();
        });

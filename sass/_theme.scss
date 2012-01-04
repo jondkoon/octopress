@@ -34,7 +34,7 @@ body
 {
     background-image: url("../images/robot-flipped.png");
     background-repeat: no-repeat;
-    padding-left: 130px;
+    padding-left: 160px;
     background-position: -30px 7px;
     background-size: 14% auto;
 }
@@ -151,7 +151,6 @@ $image-size: 300px;
     position: relative;
 }
 
-
 .image-crop {
     overflow: hidden;
     width: $cropped-size;
@@ -177,11 +176,20 @@ $image-size: 300px;
     margin-top: -100px;
 }
 
+.portfolio-image {
+    filter: url(/images/filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    /*-webkit-filter: grayscale(1); */ /* Webkit Nightlies & Chrome Canary */
+}
+
+.active-image img, .portfolio-image:hover {
+    filter: none;
+}
+
 .active-image {
     z-index: 5 !important;
     overflow: visible;
 }
-
 
 $shadow: 0 0 5px #DDD;
 
@@ -204,6 +212,11 @@ $image-nav-padding: 2px;
     margin-top: 2px;
     border-top: 1px solid #CCC;
     padding-top: 5px;
+    display: none;
+}
+
+.active-image .image-nav {
+    display: block;
 }
 
 $arrow-width: 120px;
@@ -215,6 +228,12 @@ $close-link-width: $image-size - ($arrow-width * 2);
     font-family: "Lucida Grande";
     font-size: 30px;
     width: $arrow-width - $image-nav-padding;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .arrow:hover, .active-image img:hover + .image-nav .close-link {
