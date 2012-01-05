@@ -68,6 +68,11 @@ $(function(){
                pieceInfo.slideDown();
            }
        });
+       images.hover(function(){
+           closeLink.toggleClass('close-hover');
+       }, function(){
+           closeLink.toggleClass('close-hover');
+       });
    });
    //after setting each imageCrops calculated top and left property
    //lets set their position to absolute so animation will work well

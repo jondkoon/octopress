@@ -32,11 +32,10 @@ a {
 
 body 
 {
-    background-image: url("../images/robot-flipped.png");
+    background-image: url("../images/robot.png");
     background-repeat: no-repeat;
     padding-left: 160px;
     background-position: -30px 7px;
-    background-size: 14% auto;
 }
 
 .hidden {
@@ -234,7 +233,7 @@ $close-link-width: $image-size - ($arrow-width * 2);
     user-select: none;
 }
 
-.arrow:hover, .active-image img:hover + .image-nav .close-link {
+.arrow:hover, .close-hover {
     color: #000;
 }
 
