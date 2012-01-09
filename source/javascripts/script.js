@@ -53,7 +53,7 @@ $(function(){
 
            var activeImgCSS = {
                'margin-left': '0px',
-               'margin-top': '0px',
+               'margin-top': '0px'
            };
            if($this.is('.active-image')){
                $this.animate(originalCSS, 500, function(){
