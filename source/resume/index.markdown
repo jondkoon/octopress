@@ -23,11 +23,11 @@ Bachelor of Science in Computer Science, December 2009
 - Worked with a distributed team to develop and deploy a web based Management Performance Dashboard for Aaron Rents. Role involved creation of two custom jquery plugins and oversight of frontend architecture.
 - Provided consulting and e-commerce development for the redesign of whiteoakpastures.com in partnership with Green Olive Media.
 - Prototyped web based means to interoperate with a users local hardware using Java Applets and Node.js
-- Architected and developed a web based, distributed, business intelligence platform for Aaron Rents utilizing ASP.Net MVC 3, C#, SQL Server, jQuery, and KnocoutJS
+- Architected and developed a web based, distributed, business intelligence platform for Aaron Rents utilizing ASP.Net MVC 3, C#, SQL Server, jQuery, and KnockoutJS
 - Championed and developed custom tachometer widget for use with Aarons Management Performance Dashboard using HTML5 Canvas.
 - Developed custom cascading list jquery widget modelled after OSX finder for Aaron Rents.
 - Crafted proposal for replacing undergraduate lab management system for the Georgia Tech Department of Physics.
-- Lead frontend engineering and backend rewrite for a web based store diagramming, data gathering, and reprting tool for The Home Depot using Django, jQuery UI, and Backbone.js 
+- Lead frontend engineering and backend rewrite for a web based store diagramming, data gathering, and reporting tool for The Home Depot using Django, jQuery UI, and Backbone.js 
 - Designed, built, and documented 4 web services for the Administrative Office of the Courts to securely transmit traffic citation data from Georgia's law enforcement agencies, to county courts, and eventually to the state citation data warehouse.
 - Contributed programming, and design expertise to deploy a web based Probate Court Information System capable of managing information, generating forms, reports, and receipts for marriage licenses, firearms licenses, probate cases, birth certificates, death certificates, and wills.
 
