@@ -280,3 +280,7 @@ $close-link-width: $image-size - ($arrow-width * 2);
 #content a[href="#"]:hover {
     text-decoration: underline;
 }
+
+.resume-export {
+    float: right;
+}
