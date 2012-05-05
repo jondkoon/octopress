@@ -54,6 +54,14 @@ task :generate do
   system "jekyll"
 end
 
+desc "Generate resume exports"
+task :resume do
+    puts "## Generating pdf and docx for resume"
+    Dir.chdir "source/_includes/resume/"
+    system "generate.sh"
+    Dir.chdir "../../../"
+end
+
 desc "Watch the site and regenerate when it changes"
 task :watch do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
@@ -206,7 +214,7 @@ task :deploy do
 end
 
 desc "Generate website and deploy"
-task :gen_deploy => [:integrate, :generate, :deploy] do
+task :gen_deploy => [:integrate, :generate, :resume, :deploy] do
 end
 
 desc "copy dot files for deployment"
