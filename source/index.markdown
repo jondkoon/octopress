@@ -7,10 +7,9 @@ sharing: false
 footer: false
 sidebar: false
 ---
-I'm Jon Koon, an Atlanta based software developer with a focus in web development. I enjoy creating highly responsive, usable, beautiful, well architected, and maintainable applications that solve real problems.
+I'm Jon Koon, a native Atlantan and now San Francisco based software developer with a focus in web development. I am passionate about creating highly responsive, usable, beautiful, well architected, and maintainable applications that solve real problems.
 
-I have worked with major web frameworks in Python, C#.NET, Java, and PHP. The common thread is HTTP, HTML, CSS, and JavaScript. With an affinity for UI development and responsive applications I have been drawn to the study of JavaScript and front end architecture. I love working with jQuery and have developed a few plugins.
+I have worked with major web frameworks in Ruby, Scala, Python, C#.NET, Java, and PHP. The common thread is HTTP, HTML, CSS, and JavaScript. With an affinity for UI development and responsive applications I have been drawn to the study of JavaScript, front end architecture, and user experience design.
 
 I'm foremost a follower of Christ, a Husband, and Father.  
-I'm a part-time [Teacher](/teaching) and a lifelong Student.  
-My main gig is doing Software Development with [The Proven Method's](http://provenmethod.com/professional-services) professional services team.
+My main gig is doing software development for [Twitter Inc.](http://twitter.com/) as a product engineer on the web team.

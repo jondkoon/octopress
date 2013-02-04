@@ -7,4 +7,4 @@ sharing: false
 footer: false
 sidebar: false
 ---
-I teach an Intro to Programming class at [The Creative Circus](http://creativecircus.edu) as a part of their Interactive Development program. The course covers variables, logic, control flow, iteration, functions, and object oriented programming using JavaScript. It is taught with web development in mind, but general programming best practices are emphasized.
+For three quarters I taught an Intro to Programming class at [The Creative Circus](http://creativecircus.edu) as a part of their Interactive Development program. The course covered variables, logic, control flow, iteration, functions, and object oriented programming using JavaScript. It was taught with web development in mind, but general programming best practices were emphasized.

@@ -7,6 +7,14 @@ sharing: false
 footer: false
 sidebar: false
 portfolio: 
+ -  name: Twitter.com
+    class: twitter
+    description: Twitter.com, Twitter Inc's primary web application.
+    role: Frontend engineer on the web profiles team. Our team is reponsible for the profile page, settings pages, profile popup, and direct message dialog.
+    technology: Scala, Ruby, Ruby on Rails, jQuery, flight.js, mustache, jasmine, webdriver, and many custom technologies
+    images:
+        - twitter-bird-small.png
+        - twitter-popup.png
  -  name: Home Depot Layout Tool
     description: Designed to allow reset team members to diagram the layout of a Home Depot department from a birds eye view and then drill into each product “bay” to add images and other meta information. This information was gathered from 2000+ plus stores across the country and could be interactively viewed by Home Depot Store Support Center in Atlanta.
     role: Lead front end engineer. Wrote custom form framework. Lead the rewrite using Django and Backbone.js
@@ -95,7 +103,7 @@ portfolio:
 ---
 <div class="portfolio-pieces">
 {% for piece in page.portfolio %}
-    <div class="piece-info">
+    <div class="piece-info {{ piece.class }}">
         <h3>{{ piece.name }}</h3>
         <p class="description">{{ piece.description }}</p>
         <h4>Role</h4>
@@ -104,7 +112,7 @@ portfolio:
         <p class="technology">{{ piece.technology }}</p>
     </div>
 {% endfor %}
-    <div class="portfolio-images">
+    <div class="portfolio-images group">
     {% for piece in page.portfolio %}
         {% if piece.images %}
             <div class="image-crop">
