@@ -6,14 +6,31 @@
         <link rel="stylesheet" href="style.css">
         <script src="jquery.min.js"></script>
         <script src="script.js"></script>
+        <style>
+          #canvas {
+            margin: 20px auto 0 auto;
+            display: block;
+          }
+          #controls {
+            width: 500px;
+            margin: 10px auto 0 auto;
+          }
+          h2 {
+            text-align: center;
+            margin-bottom: 5px;
+          }
+        </style>
     </head>
     <body>
-        <canvas id="canvas" width="200" height="200"></canvas>
-        <br/>
-        <button id="start_btn" >Start</button>
-        <button id="stop_btn" >Stop</button>
-        <button id="step_btn" >Step</button>
-        <button id="clear_btn" >Clear</button>
-        <!-- page content -->
+      <div id="game-of-life">
+        <h2>Draw below and click start</h2>
+        <canvas id="canvas" width="500" height="300"></canvas>
+        <div id="controls">
+          <button id="start_btn" >Start</button>
+          <button id="stop_btn" >Stop</button>
+          <button id="step_btn" >Step</button>
+          <button id="clear_btn" >Clear</button>
+        </div>
+      </div>
     </body>
 </html>
