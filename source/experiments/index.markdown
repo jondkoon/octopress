@@ -7,4 +7,6 @@ sharing: false
 footer: false
 sidebar: false
 ---
-- [JS Fireworks](/experiments/fireworks/index.html)
+- [Fireworks](/experiments/fireworks/)
+- [Game of Life](/experiments/game_of_life/)
+- [Pong](/experiments/pong/)
